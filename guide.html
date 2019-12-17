@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>目标 | Kalengo akajs</title>
+    <meta name="description" content="Just playing around">
+    
+    
+    <link rel="preload" href="/akajs_doc/assets/css/0.styles.ef030843.css" as="style"><link rel="preload" href="/akajs_doc/assets/js/app.0fa76309.js" as="script"><link rel="preload" href="/akajs_doc/assets/js/2.4bdd5d90.js" as="script"><link rel="preload" href="/akajs_doc/assets/js/7.1bc09903.js" as="script"><link rel="prefetch" href="/akajs_doc/assets/js/3.c5c230c2.js"><link rel="prefetch" href="/akajs_doc/assets/js/4.59116900.js"><link rel="prefetch" href="/akajs_doc/assets/js/5.d9d48266.js"><link rel="prefetch" href="/akajs_doc/assets/js/6.b82dadbb.js"><link rel="prefetch" href="/akajs_doc/assets/js/8.b8622590.js"><link rel="prefetch" href="/akajs_doc/assets/js/9.6613c730.js">
+    <link rel="stylesheet" href="/akajs_doc/assets/css/0.styles.ef030843.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/akajs_doc/" class="home-link router-link-active"><!----> <span class="site-name">Kalengo akajs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/akajs_doc/" class="nav-link">首页</a></div><div class="nav-item"><a href="/akajs_doc/guide.html" class="nav-link router-link-exact-active router-link-active">指南</a></div><div class="nav-item"><a href="https://github.com/kaolalicai/akajs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/akajs_doc/" class="nav-link">首页</a></div><div class="nav-item"><a href="/akajs_doc/guide.html" class="nav-link router-link-exact-active router-link-active">指南</a></div><div class="nav-item"><a href="https://github.com/kaolalicai/akajs" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/akajs_doc/" class="sidebar-link">Home</a></li><li><a href="/akajs_doc/quickstart.html" class="sidebar-link">快速开始</a></li><li><a href="/akajs_doc/guide.html" class="active sidebar-link">指南</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#目标" class="sidebar-link">目标</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#akajs-的主要模块" class="sidebar-link">akajs 的主要模块</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#常用的-koa-中间件" class="sidebar-link">常用的 Koa 中间件</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#系统配置-config" class="sidebar-link">系统配置 config</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#模块化" class="sidebar-link">模块化</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#注解式路由" class="sidebar-link">注解式路由</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#ioc-依赖注入" class="sidebar-link">IOC 依赖注入</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#为什么要用-ioc" class="sidebar-link">为什么要用 IOC</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#inject" class="sidebar-link">Inject</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#lazyinject" class="sidebar-link">LazyInject</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#service" class="sidebar-link">Service</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#autowired" class="sidebar-link">Autowired</a></li></ul></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#参数和返回值处理" class="sidebar-link">参数和返回值处理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#请求参数处理" class="sidebar-link">请求参数处理</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#统一返回值" class="sidebar-link">统一返回值</a></li></ul></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#mongoose-支持" class="sidebar-link">Mongoose 支持</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#mongoose-事务" class="sidebar-link">Mongoose 事务</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#crud" class="sidebar-link">CRUD</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#create" class="sidebar-link">create</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#findall" class="sidebar-link">findAll</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#findone" class="sidebar-link">findOne</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#updateone" class="sidebar-link">updateOne</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#remove" class="sidebar-link">remove</a></li></ul></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#自动加载机制" class="sidebar-link">自动加载机制</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#logger" class="sidebar-link">Logger</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#logger-to-file" class="sidebar-link">logger to file</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#logger-to-mongodb" class="sidebar-link">logger to mongodb</a></li></ul></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#健康检查" class="sidebar-link">健康检查</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#获取服务器状态" class="sidebar-link">获取服务器状态</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#修改服务器状" class="sidebar-link">修改服务器状</a></li></ul></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#常用工具" class="sidebar-link">常用工具</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#api-接口文档" class="sidebar-link">API 接口文档</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#从文档到代码" class="sidebar-link">从文档到代码</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#从代码到文档" class="sidebar-link">从代码到文档</a></li></ul></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#test" class="sidebar-link">Test</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#运行测试" class="sidebar-link">运行测试</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#集成测试" class="sidebar-link">集成测试</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#测试辅助工具推荐" class="sidebar-link">测试辅助工具推荐</a></li></ul></li><li class="sidebar-sub-header"><a href="/akajs_doc/guide.html#todo" class="sidebar-link">TODO</a></li></ul></li><li><a href="/akajs_doc/changelog.html" class="sidebar-link">Changelog</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/akajs_doc/changelog.html#_0-6-0" class="sidebar-link">0.6.0</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/changelog.html#_0-5-5" class="sidebar-link">0.5.5</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/changelog.html#_0-5-0" class="sidebar-link">0.5.0</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/changelog.html#_0-4-5" class="sidebar-link">0.4.5</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/changelog.html#_0-4-0" class="sidebar-link">0.4.0</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/changelog.html#_0-3-0" class="sidebar-link">0.3.0</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/changelog.html#_0-2-0" class="sidebar-link">0.2.0</a></li><li class="sidebar-sub-header"><a href="/akajs_doc/changelog.html#_0-1-0" class="sidebar-link">0.1.0</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="目标"><a href="#目标" class="header-anchor">#</a> 目标</h2> <p>akajs 的目标是提供一个开箱即用的 web 服务，本质上是基于 koa，组装了常用的中间件，搭配上 ORM、redis 等工具。
+此外还通过项目模板的方式，展示一些 Web项目的最佳实践。</p> <h2 id="akajs-的主要模块"><a href="#akajs-的主要模块" class="header-anchor">#</a> akajs 的主要模块</h2> <ul><li>@akajs/web ： 提供 koa 相关的功能，包括 crud 自动生成</li> <li>@akajs/ioc ： 提供容器和依赖注入实现</li> <li>@akajs/mongoose ： 基于 typegoose 提供更简单的 orm</li> <li>@akajs/utils ： 常用工具，详细见后文</li></ul> <h2 id="常用的-koa-中间件"><a href="#常用的-koa-中间件" class="header-anchor">#</a> 常用的 Koa 中间件</h2> <p>akajs 通用一下方式来初始化 koa 服务。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Application<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/web'</span>
+
+<span class="token keyword">const</span> app<span class="token punctuation">:</span> Application <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span>app<span class="token punctuation">}</span>
+
+</code></pre></div><p>初始化 Application 的时候，会新建 koa 对象，并挂载常用中间件进去，最后再把注解式的路由绑定到 koa 中。</p> <p>所以，你也可以分步地完成这个过程。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Application<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/web'</span>
+
+<span class="token keyword">const</span> app<span class="token punctuation">:</span> Application <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  autoBuild<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// 不再自动初始化</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token comment">// middleware</span>
+app<span class="token punctuation">.</span><span class="token function">bodyParser</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">requestLog</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">assembleParameters</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">buildMiddleware</span><span class="token punctuation">(</span>requestLog<span class="token punctuation">)</span>  <span class="token comment">// 自定义的中间件</span>
+app<span class="token punctuation">.</span><span class="token function">formatResponse</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// app.statics()</span>
+
+<span class="token comment">// auto require</span>
+app<span class="token punctuation">.</span><span class="token function">requireControllers</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// routers</span>
+app<span class="token punctuation">.</span><span class="token function">buildRouters</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token comment">// koa.use(requestLog)</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span>app<span class="token punctuation">}</span>
+</code></pre></div><p>因为 koa 中间件的注册顺序会对实际效果有影响的，
+所以你需要自定义中间件的话，例如在 requestLog 和 formatResponse 之间插入中间件，就只能采用这种方式来初始化 koa 了。
+每个中间件的作用后文都会有讲解。</p> <h2 id="系统配置-config"><a href="#系统配置-config" class="header-anchor">#</a> 系统配置 config</h2> <p>akajs 基于 <a href="https://github.com/lorenwest/node-config" target="_blank" rel="noopener noreferrer">config<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 这个包来实现系统配置，在项目目录下有个 config 文件夹，里面是不同环境的配置</p> <div class="language- extra-class"><pre class="language-text"><code>config
+--default.js
+--dev.js
+--production.js
+</code></pre></div><h2 id="模块化"><a href="#模块化" class="header-anchor">#</a> 模块化</h2> <p>在项目变复杂的时候，进行模块划分降低复杂度的有效方法。
+在之前一些项目中，我们通过文件夹隔离的方式来实现模块化</p> <div class="language- extra-class"><pre class="language-text"><code>src
+    user
+        controller
+        service
+        index.ts
+        modules.ts
+    order
+        controller
+        service
+        index.ts
+        modules.ts
+</code></pre></div><p>每个模块都有自己的 mvc，使用 index.ts 来向外暴露方法，使用 modules.ts 来声明引入其他模块
+在 order 模块里使用 user 模块就像这样：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>userModule<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../modules'</span>
+
+<span class="token keyword">await</span> userMoudle<span class="token punctuation">.</span><span class="token function">findUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>这个方式足够简单，但是需要开发自觉维护规范。</p> <p>akajs 引入了 IOC 机制，所以模块之间的调用方式也会发生变化。
+假设有两个模块 user 和 account，在 user 里 export 模块</p> <p>src/user/UserModule.ts</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>UserService<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./service/UserService'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Service<span class="token punctuation">,</span> Inject<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/core'</span>
+
+@<span class="token function">Service</span><span class="token punctuation">(</span><span class="token string">'UserModule'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserModule</span> <span class="token punctuation">{</span>
+  @<span class="token function">Inject</span><span class="token punctuation">(</span><span class="token string">'UserService'</span><span class="token punctuation">)</span>
+  userService<span class="token punctuation">:</span> UserService
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>在 account 中，直接注入即可</p> <p>src/account/controller/AccountController.ts</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Get<span class="token punctuation">,</span> Controller<span class="token punctuation">,</span> Inject<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/core'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>UserModule<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'../../user'</span>
+
+@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">'/account'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">AccountController</span> <span class="token punctuation">{</span>
+  @<span class="token function">Inject</span><span class="token punctuation">(</span><span class="token string">'UserModule'</span><span class="token punctuation">)</span>
+  <span class="token keyword">public</span> userModule<span class="token punctuation">:</span> UserModule
+
+  @<span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">'/findUser'</span><span class="token punctuation">)</span>
+  <span class="token keyword">async</span> <span class="token function">findUser</span> <span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>name<span class="token punctuation">}</span> <span class="token operator">=</span> ctx<span class="token punctuation">.</span>parameters
+    <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>userModule<span class="token punctuation">.</span>userService<span class="token punctuation">.</span><span class="token function">findOneUserByName</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+    ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> user
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>详细的代码示例见 integration/modules</p> <p><strong>备注</strong>：
+NestJs 提供了 Module 的注解，来强制定义模块，也是不错的方法。</p> <div class="language-ts extra-class"><pre class="language-ts"><code>@<span class="token function">Module</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  controllers<span class="token punctuation">:</span> <span class="token punctuation">[</span>CatsController<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  providers<span class="token punctuation">:</span> <span class="token punctuation">[</span>CatsService<span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">CatsModule</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre></div><p><strong>不过在云原生时代，有了 k8s 的辅助，最好还是不要做模块化了，拆成多个服务吧，服务足够小的情况下，分工和技术升级会简单很多</strong></p> <h2 id="注解式路由"><a href="#注解式路由" class="header-anchor">#</a> 注解式路由</h2> <p>使用注解声明路由</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Controller<span class="token punctuation">,</span> Get<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/core'</span>
+
+@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token punctuation">{</span>
+
+  @<span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">'/hello/:name'</span><span class="token punctuation">)</span>
+  <span class="token keyword">async</span> <span class="token function">hello</span> <span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>name<span class="token punctuation">}</span> <span class="token operator">=</span> ctx<span class="token punctuation">.</span>params
+    ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token string">'hello '</span> <span class="token operator">+</span> name
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>注解式路由的好处是灵活直观，也方便框架控制者限定 Controller 的样式。
+声明式路由（统一在一个 route 文件里定义路由）的好处在于全局总览。</p> <p>akajs 使用注解式路由，是为了方便通过注解给路由注入更丰富的功能。</p> <p>使用中间件</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Controller<span class="token punctuation">,</span> Get<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/core'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>logger<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/utils'</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">routerMiddleware</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">await</span> <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">isObject</span><span class="token punctuation">(</span>ctx<span class="token punctuation">.</span>body<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ctx<span class="token punctuation">.</span>body<span class="token punctuation">.</span>info <span class="token operator">=</span> <span class="token string">'inject from router middleware'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+@<span class="token function">Controller</span><span class="token punctuation">(</span>
+  <span class="token string">'/mid'</span><span class="token punctuation">,</span>
+  <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">'Hello from controller middleware!'</span><span class="token punctuation">)</span>
+    ctx<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">'Kalengo'</span><span class="token punctuation">,</span> <span class="token string">'inject form middleware'</span><span class="token punctuation">)</span>
+    <span class="token keyword">await</span> <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// ctx.body.info = 'inject form middleware'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MiddlewareController</span> <span class="token punctuation">{</span>
+
+  @<span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">'/get'</span><span class="token punctuation">,</span> routerMiddleware<span class="token punctuation">)</span>
+  <span class="token keyword">async</span> <span class="token keyword">get</span> <span class="token punctuation">(</span>ctx<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">'hello'</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="ioc-依赖注入"><a href="#ioc-依赖注入" class="header-anchor">#</a> IOC 依赖注入</h2> <h3 id="为什么要用-ioc"><a href="#为什么要用-ioc" class="header-anchor">#</a> 为什么要用 IOC</h3> <p>IOC 可以帮助我们实现功能解耦，不过这个要业务比较复杂的时候才需要，项目简单的时候 IOC 也可以作为单例的一种实现方式</p> <p>IOC 通过 <a href="https://github.com/inversify/InversifyJS" target="_blank" rel="noopener noreferrer">inversify<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 这个库实现</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">WechatController</span> <span class="token punctuation">{</span>
+
+   @<span class="token function">inject</span><span class="token punctuation">(</span><span class="token constant">TYPES</span><span class="token punctuation">.</span>BaseProxyImp<span class="token punctuation">)</span>
+   <span class="token keyword">private</span> wxProxy<span class="token punctuation">:</span> IProxy
+
+   <span class="token keyword">async</span> <span class="token function">getOpenId</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">:</span> Context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>wxProxy<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><p>这个例子里，我们可以给 WechatController 的 wxProxy 声明注入 Proxy 对象。
+当然，前提是要在容器配置里定义好 TYPES.BaseProxyImp 对应的实例</p> <div class="language-ts extra-class"><pre class="language-ts"><code>container<span class="token punctuation">.</span>bind<span class="token operator">&lt;</span>IProxy<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token constant">TYPES</span><span class="token punctuation">.</span>BaseProxyImp<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span>APoxy<span class="token punctuation">)</span>
+</code></pre></div><p>后期如果我们要更换 Proxy 的实现为 BProxy，只要保证 BProxy 能实现 IProxy 接口，我们直接在容器配置中更新配置为</p> <div class="language-ts extra-class"><pre class="language-ts"><code>container<span class="token punctuation">.</span>bind<span class="token operator">&lt;</span>IProxy<span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token constant">TYPES</span><span class="token punctuation">.</span>BaseProxyImp<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span>BPoxy<span class="token punctuation">)</span>
+</code></pre></div><p>这个就是为什么 IOC 能实现解耦，也是控制反转（Inversion of Control，缩写为IoC）的名字由来。</p> <p>控制是指 WechatController 和 Proxy 之间的引用关系，在没有 IOC 之前，我们是通过编码来定义他们之间的关系的。
+一般是这样：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">WechatController</span> <span class="token punctuation">{</span>
+   <span class="token keyword">private</span> wxProxy <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AProxy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+   <span class="token keyword">async</span> <span class="token function">getOpenId</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">:</span> Context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>wxProxy<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+   <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</code></pre></div><p>也就是说，这段代码包含了业务逻辑和组件之间的引用关系两种内容。</p> <p>当代码量上去之后，关系和业务逻辑交织在一起，
+后面要改动其中某个关系就要大动干戈了，你可能要修改多处代码，还可能改错和改漏。</p> <p>IOC 的目的就是把组件关系从代码里抽出来，由配置文件来定义，修改引用关系直接通过修改配置文件即可实现。</p> <p>akajs 提供了以下常用的 IOC 注解</p> <h3 id="inject"><a href="#inject" class="header-anchor">#</a> Inject</h3> <p>注入对象</p> <h3 id="lazyinject"><a href="#lazyinject" class="header-anchor">#</a> LazyInject</h3> <p>某些待注入对象可能并不能在应用启动的时候就完成初始化，例如 Mongoose 的 Model，初始化需要些时间，我们可以是用 LazyInject 来延迟注入时机，避免启动报错</p> <div class="language-ts extra-class"><pre class="language-ts"><code>
+@<span class="token function">CrudController</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token keyword">implements</span> <span class="token class-name">ICurdController</span> <span class="token punctuation">{</span>
+
+  @<span class="token function">LazyInject</span><span class="token punctuation">(</span><span class="token string">'UserModel'</span><span class="token punctuation">)</span>
+  <span class="token keyword">public</span> crudModel<span class="token punctuation">:</span> UserModel
+<span class="token punctuation">}</span>
+
+</code></pre></div><h3 id="service"><a href="#service" class="header-anchor">#</a> Service</h3> <p>对 Service 类的声明与使用</p> <p>UserService.ts</p> <div class="language-ts extra-class"><pre class="language-ts"><code>@<span class="token function">Service</span><span class="token punctuation">(</span><span class="token string">'UserService'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserService</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>UserController.ts</p> <div class="language-ts extra-class"><pre class="language-ts"><code>@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token punctuation">{</span>
+
+  @<span class="token function">Inject</span><span class="token punctuation">(</span><span class="token string">'UserService'</span><span class="token punctuation">)</span>
+  <span class="token keyword">public</span> userService<span class="token punctuation">:</span> UserService
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="autowired"><a href="#autowired" class="header-anchor">#</a> Autowired</h3> <p>大部分对象的声明和注入的 key 和变量名或者类名是一致的，也就是说，我们其实可以做到更智能的自动注入。</p> <p>UserService.ts</p> <div class="language-ts extra-class"><pre class="language-ts"><code>@<span class="token function">Service</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserService</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+User<span class="token punctuation">.</span>ts
+<span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span>`ts
+@<span class="token function">TypeMongoModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">type</span> UserModel <span class="token operator">=</span> ReturnModelType<span class="token operator">&lt;</span><span class="token keyword">typeof</span> User<span class="token operator">&gt;</span>
+</code></pre></div><p>UserController.ts</p> <div class="language-ts extra-class"><pre class="language-ts"><code>@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token punctuation">{</span>
+
+  @<span class="token function">Autowired</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">public</span> userService<span class="token punctuation">:</span> UserService
+
+  @<span class="token function">Autowired</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">public</span> userModel<span class="token punctuation">:</span> UserModel
+<span class="token punctuation">}</span>
+</code></pre></div><p>typescript 提供的注解功能有限，Autowired 可以读取到被注入的变量名字，所以可以通过名字来进行默认的注入。
+在上面的例子中:</p> <ul><li>@Service() === @Service('UserService')</li> <li>@TypeMongoModel() === @TypeMongoModel('UserModel')</li></ul> <p>而 Autowired 则默认做了以下事情：</p> <ul><li>@Autowired() === Inject('UserService')  // 通过被注解的变量名 userService 来翻译</li> <li>@Autowired() === LazeInject('UserModel')    // 通过被注解的变量名 userModel 来翻译，如果存在 Model 关键字，则使用 LazeInject</li></ul> <p>注意，为了处理大小写问题，@Service() 自动绑定的 key 实际上是全小写的。</p> <h2 id="参数和返回值处理"><a href="#参数和返回值处理" class="header-anchor">#</a> 参数和返回值处理</h2> <h3 id="请求参数处理"><a href="#请求参数处理" class="header-anchor">#</a> 请求参数处理</h3> <p>接口参数校验是后端经常要处理的问题，akajs 提供 DTO（数据传输对象) 帮你处理校验</p> <p>定义一个 DTO 对象，用注解的方式声明对象里各个参数的校验规则, 更详细的校验规则参考 <a href="https://github.com/typestack/class-validator" target="_blank" rel="noopener noreferrer">class-validator<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Length<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'class-validator'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">RegisterDto</span> <span class="token punctuation">{</span>
+  @<span class="token function">Length</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span>
+  name<span class="token operator">?</span><span class="token punctuation">:</span> <span class="token builtin">string</span>
+  @<span class="token function">Length</span><span class="token punctuation">(</span><span class="token number">11</span><span class="token punctuation">,</span> <span class="token number">11</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>message<span class="token punctuation">:</span> <span class="token string">'手机号长度为11'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  phone<span class="token punctuation">:</span> <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>在 Controller 里注入到参数中</p> <div class="language-ts extra-class"><pre class="language-ts"><code>@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token punctuation">{</span>
+
+  @<span class="token function">Post</span><span class="token punctuation">(</span><span class="token string">'/register'</span><span class="token punctuation">)</span>
+  <span class="token keyword">async</span> <span class="token function">register</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">:</span> Context<span class="token punctuation">,</span> @<span class="token constant">DTO</span><span class="token punctuation">(</span>RegisterDto<span class="token punctuation">)</span> dto</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>@DTO 会尝试在 ctx 找到所有参数，并初始化为 RegisterDto 对象 dto, 并且会进行校验.</p> <p>如果不使用 DTO，akajs 则会把 query 和 body 参数都打包到 ctx.parametes 中, 你可以自行处理</p> <div class="language-ts extra-class"><pre class="language-ts"><code>@<span class="token function">Controller</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token punctuation">{</span>
+  @<span class="token function">Post</span><span class="token punctuation">(</span><span class="token string">'/register'</span><span class="token punctuation">)</span>
+  <span class="token keyword">async</span> <span class="token function">register</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">:</span> Context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'parametes'</span><span class="token punctuation">,</span> ctx<span class="token punctuation">.</span>parametes<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="统一返回值"><a href="#统一返回值" class="header-anchor">#</a> 统一返回值</h3> <p>akajs 默认会把返回值包装成 JSON 格式</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token punctuation">{</span>
+    code<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span>
+    message<span class="token punctuation">:</span><span class="token string">'xxx'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>code = 1 代表发生了错误，当然你也可以定义自己的一套 code，</p> <p>@akajs/utils 提供了 AppError 自定义错误对象。</p> <h2 id="mongoose-支持"><a href="#mongoose-支持" class="header-anchor">#</a> Mongoose 支持</h2> <p>akajs 默认支持 mongodb, 并且使用 mongoose 作为 orm。</p> <p>通过 MongoModel 注解定义 mongoose 对象（已经废弃)</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>IBaseMongoModel<span class="token punctuation">,</span> MongoModel<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/mongoose'</span>
+
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">IUser</span> <span class="token punctuation">{</span>
+  phone<span class="token punctuation">:</span> <span class="token builtin">string</span>
+  name<span class="token punctuation">:</span> <span class="token builtin">string</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">interface</span> <span class="token class-name">IUserModel</span> <span class="token keyword">extends</span> <span class="token class-name">IUser</span><span class="token punctuation">,</span> Document <span class="token punctuation">{</span>
+  <span class="token comment">// registerSuccess (): IUserModelModel</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">type</span> UserModel <span class="token operator">=</span> Model<span class="token operator">&lt;</span>IUserModel<span class="token operator">&gt;</span>
+
+<span class="token keyword">const</span> schema<span class="token punctuation">:</span> Schema <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  phone<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token keyword">type</span><span class="token punctuation">:</span> String<span class="token punctuation">,</span> index<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  name<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token keyword">type</span><span class="token punctuation">:</span> String<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+@<span class="token function">MongoModel</span><span class="token punctuation">(</span><span class="token string">'UserModel'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token keyword">implements</span> <span class="token class-name">IBaseMongoModel</span> <span class="token punctuation">{</span>
+  modelName <span class="token operator">=</span> <span class="token string">'User'</span>
+  schema <span class="token operator">=</span> schema
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>这里我们还要定义 UserModel 的类型，这样 typescript 才可以帮你做类型校验和代码提示。</p> <p>以上写法最大的问题就是，Interface 和 Schema 很多是重复的，为了简化 Model 的写法，我们引入了 <a href="https://github.com/szokodiakos/typegoose" target="_blank" rel="noopener noreferrer">Typegoose<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>优化后的写法如下：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>TypeMongoModel<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/mongoose'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>ReturnModelType<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@typegoose/typegoose'</span>
+
+@<span class="token function">TypeMongoModel</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">User</span> <span class="token punctuation">{</span>
+  phone<span class="token punctuation">:</span> <span class="token builtin">string</span>
+  name<span class="token punctuation">:</span> <span class="token builtin">string</span>
+  count<span class="token punctuation">:</span> <span class="token builtin">number</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">type</span> RecordModel <span class="token operator">=</span> ReturnModelType<span class="token operator">&lt;</span><span class="token keyword">typeof</span> User<span class="token operator">&gt;</span>
+</code></pre></div><p><strong>注意</strong> typegoose 6.x 版本进行了重大更新，npm 库也进行了迁移，如果你之前使用 typegoose 5.x，需要按照 <a href="https://typegoose.github.io/typegoose/guides/migrate-to-6/#methods-staticmethod-instancemethod-virtuals" target="_blank" rel="noopener noreferrer">此文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> 进行迁移升级</p> <p>================================================================</p> <p>程序初始化的时候会初始化 mongoose 连接并注入 model 到容器中。</p> <p>app.ts</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>initMongoose<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/mongoose'</span>
+<span class="token function">initMongoose</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>mongodb 的连接配置信息在 config 中定义</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  mongodb<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    debug<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    connections<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        name<span class="token punctuation">:</span> <span class="token string">'db'</span><span class="token punctuation">,</span>
+        url<span class="token punctuation">:</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">MONGODB</span> <span class="token operator">||</span> <span class="token string">'mongodb://localhost/unit-test'</span><span class="token punctuation">,</span>
+        options<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>定义好了 Model，就可以在 Controller 里使用了。</p> <div class="language-ts extra-class"><pre class="language-ts"><code>@<span class="token function">CrudController</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token punctuation">{</span>
+
+  @<span class="token function">inject</span><span class="token punctuation">(</span><span class="token string">'UserModel'</span><span class="token punctuation">)</span>
+  <span class="token keyword">private</span> crudModel<span class="token punctuation">:</span> UserModel
+
+  <span class="token keyword">async</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>crudModel<span class="token punctuation">.</span><span class="token function">findOne</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>注意</strong>：这里实际注入的并不是 User 这个Class的实例，而是 mongoose 注册的 model。
+<strong>注意</strong>：如果你需要连接多个 db 实例，请参考 integration/mongoose-crud 示例。</p> <h2 id="mongoose-事务"><a href="#mongoose-事务" class="header-anchor">#</a> Mongoose 事务</h2> <p>MongoDB 4.0 开始提供了事务支持，mongoose 也提供了相应的实现，不过目前的写法还是比较繁琐，
+你需要在每一个事务里做提交和回滚的处理，所以 akajs 提供了一个事务的注解来简化这个处理流程。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> mongoose <span class="token keyword">from</span> <span class="token string">'mongoose'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Schema<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'mongoose'</span>
+<span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> assert <span class="token keyword">from</span> <span class="token string">'assert'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>Transactional<span class="token punctuation">,</span> getSession<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./decorators/Transactional'</span>
+
+mongoose<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span><span class="token string">'mongodb://localhost:27017,localhost:27018,localhost:27019/test?replicaSet=rs'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>useNewUrlParser<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+mongoose<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token string">'debug'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> db <span class="token operator">=</span> mongoose<span class="token punctuation">.</span>connection
+<span class="token keyword">const</span> Customer <span class="token operator">=</span> db<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token string">'Customer'</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Schema</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span> String<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ClassA</span> <span class="token punctuation">{</span>
+  @<span class="token function">Transactional</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">async</span> <span class="token function">main</span> <span class="token punctuation">(</span><span class="token parameter">key</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">await</span> <span class="token keyword">new</span> <span class="token class-name">Customer</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">'ClassA'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">{</span>session<span class="token punctuation">:</span> <span class="token function">getSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> doc1 <span class="token operator">=</span> <span class="token keyword">await</span> Customer<span class="token punctuation">.</span><span class="token function">findOne</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">'ClassA'</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    assert<span class="token punctuation">.</span><span class="token function">ok</span><span class="token punctuation">(</span><span class="token operator">!</span>doc1<span class="token punctuation">)</span>
+    <span class="token keyword">await</span> <span class="token keyword">new</span> <span class="token class-name">ClassB</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">step2</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> key
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ClassB</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">step2</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> doc2 <span class="token operator">=</span> <span class="token keyword">await</span> Customer<span class="token punctuation">.</span><span class="token function">findOne</span><span class="token punctuation">(</span><span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">'ClassA'</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">session</span><span class="token punctuation">(</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    assert<span class="token punctuation">.</span><span class="token function">ok</span><span class="token punctuation">(</span>doc2<span class="token punctuation">)</span>
+    <span class="token keyword">await</span> Customer<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">session</span><span class="token punctuation">(</span><span class="token function">getSession</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">new</span> <span class="token class-name">ClassA</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">main</span><span class="token punctuation">(</span><span class="token string">'aaa'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'res'</span><span class="token punctuation">,</span> res<span class="token punctuation">)</span>
+  mongoose<span class="token punctuation">.</span><span class="token function">disconnect</span><span class="token punctuation">(</span><span class="token builtin">console</span><span class="token punctuation">.</span>log<span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token builtin">console</span><span class="token punctuation">.</span>error<span class="token punctuation">)</span>
+
+</code></pre></div><p>@Transactional() 注解会自动提交或回滚事务（发生异常时）。
+为了避免嵌套调用时，你需要一直传递 session 的尴尬~，akajs 提供全局的 getSession() 方法，
+其实现原理是依赖 <a href="https://nodejs.org/api/async_hooks.html" target="_blank" rel="noopener noreferrer">Async Hooks<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ，是 Node 的实验性特性，
+你对此介意的话，请不要在生产环境使用。</p> <p>当然，在每一个需要 Session 的地方调用 getSession()  方法还是稍显累赘，我们可以通过 wrap mongoose 的各个方法，
+来实现自动注入 session，但是工作量有些多，暂时没时间做。</p> <h2 id="crud"><a href="#crud" class="header-anchor">#</a> CRUD</h2> <p>通过 CrudController 注解一键生成增查删改接口，restful 风格</p> <div class="language-ts extra-class"><pre class="language-ts"><code>@<span class="token function">CrudController</span><span class="token punctuation">(</span><span class="token string">'/user'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">UserController</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 必须指定 crudModel</span>
+  @<span class="token function">inject</span><span class="token punctuation">(</span><span class="token constant">TYPES</span><span class="token punctuation">.</span>UserModel<span class="token punctuation">)</span>
+  <span class="token keyword">private</span> crudModel<span class="token punctuation">:</span> UserModel
+<span class="token punctuation">}</span>
+</code></pre></div><p>CrudController 会在 UserController的 prototype 注入4个方法，你也可以重写这些方法。</p> <h3 id="create"><a href="#create" class="header-anchor">#</a> create</h3> <div class="language- extra-class"><pre class="language-text"><code>POST /:model
+</code></pre></div><p>在 body 传入 json 格式的 model 即可</p> <h3 id="findall"><a href="#findall" class="header-anchor">#</a> findAll</h3> <div class="language- extra-class"><pre class="language-text"><code>GET /:model
+</code></pre></div><p>查询接口支持分页，详细见测试 integration/mongoose-crud/e2e/user.page.spec.ts
+详细的查询参数</p> <table><thead><tr><th>参数</th> <th>类型</th> <th>描述</th></tr></thead> <tbody><tr><td>model</td> <td>String</td> <td>model 名字</td></tr> <tr><td><em>*</em></td> <td>String?</td> <td>简易的过滤参数，e.g. GET /purchase?amount=99.99</td></tr> <tr><td>where</td> <td>String?</td> <td>json 格式的 mongoose 查询条件，e.g. ?where={&quot;name&quot; : {&quot;$eq&quot; : &quot;hello&quot;}}</td></tr> <tr><td>limit</td> <td>Number?</td> <td>单页记录数 e.g. ?limit=100</td></tr> <tr><td>page</td> <td>Number?</td> <td>页码 e.g. ?page=1</td></tr> <tr><td>sort</td> <td>Number?</td> <td>排序，目前只支持单字段排序 e.g. ?sort=lastName%20ASC</td></tr> <tr><td>select</td> <td>Number?</td> <td>挑选字段，逗号分隔 e.g. ?select=name,age</td></tr> <tr><td>omit</td> <td>Number?</td> <td>不返回字段，逗号分隔 e.g. ?omit=phone</td></tr></tbody></table> <p>注意，当传入 page 参数是，返回体格式是：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    code <span class="token punctuation">:</span> <span class="token number">0</span>
+    body <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        list <span class="token punctuation">:</span> <span class="token punctuation">[</span>items<span class="token punctuation">]</span>
+        totalCount <span class="token punctuation">:</span> <span class="token number">30</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>默认则是</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    code <span class="token punctuation">:</span> <span class="token number">0</span>
+    body <span class="token punctuation">:</span> <span class="token punctuation">[</span>items<span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="findone"><a href="#findone" class="header-anchor">#</a> findOne</h3> <div class="language- extra-class"><pre class="language-text"><code>GET /:model/:id
+</code></pre></div><p>查询单条记录</p> <h3 id="updateone"><a href="#updateone" class="header-anchor">#</a> updateOne</h3> <div class="language- extra-class"><pre class="language-text"><code>PUT /:model/:id
+</code></pre></div><p>在 body 传入 json 格式的 model 即可</p> <h3 id="remove"><a href="#remove" class="header-anchor">#</a> remove</h3> <div class="language- extra-class"><pre class="language-text"><code>DELETE /:model/:id
+</code></pre></div><h2 id="自动加载机制"><a href="#自动加载机制" class="header-anchor">#</a> 自动加载机制</h2> <p>Node 应用由模块组成，采用 CommonJS 模块规范。CommonJS 的加载过程是树状的，我们以 integration/mongoose-crud 示例项目为例，
+过一遍加载顺序。
+我们通过以下命令：</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> run dev
+</code></pre></div><p>来启动服务，实际指向的文件是 src/main.ts
+如果我们想要 src/model/User.ts 这个文件被 v8 加载，那么前提是 src/main.ts 对其有直接或者间接的引用关系。
+在引入 IOC 之前，这个引用链条是：</p> <blockquote><p>main.ts --&gt; app.ts --&gt; router.ts --&gt; controller.ts --&gt; service.ts --&gt; User.ts</p></blockquote> <p>引入 IOC 之后</p> <blockquote><p>main.ts --&gt; app.ts --&gt; router.ts &lt;... IOC ...&gt; controller.ts --&gt; service.ts &lt;... IOC ..&gt; User.ts</p></blockquote> <p>Service 中的 User 是注入的，并非直接的引用关系，这样 v8 就不会加载 User.ts 了。</p> <p>router 中的 controller 是注入的，并非直接的引用关系，这样 v8 就不会加载 controller 了。</p> <p>所以我们需要自动加载机制。在初始化项目的地方：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>Application<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/core'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>initMongoose<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/mongoose'</span>
+
+<span class="token comment">// mongoose 最好先导入, mognoose 链接 db 需要时间</span>
+<span class="token function">initMongoose</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> app<span class="token punctuation">:</span> Application <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token punctuation">{</span>app<span class="token punctuation">}</span>
+
+</code></pre></div><p>initMongoose 方法默认会遍历 'src/model/*.ts' （如果是多模块项目，可以指定遍历路径，详细见 integration/modules, 文件过滤规则语法参考 <a href="https://github.com/isaacs/node-glob" target="_blank" rel="noopener noreferrer">glob<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ）
+同时，Application 在初始化的时候也会遍历 'src/controller/*.ts' 。</p> <p>通过这两个遍历功能，才能保证所有代码被正确加载。</p> <p>如果你在开发过程中，有部分代码是通过注入的，无法被加载的话，你只需要在合适的位置显示 import 即可。
+例如在 app.ts</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token string">'./service/UserService'</span>
+</code></pre></div><h2 id="logger"><a href="#logger" class="header-anchor">#</a> Logger</h2> <h3 id="logger-to-file"><a href="#logger-to-file" class="header-anchor">#</a> logger to file</h3> <p>akajs 默认配置了 request log，所有 http 请求都会输出 log，背后实现是 morgan 这个中间件</p> <p><code>2019-11-27 18:14:19.48 &lt;info&gt; Application.js:51 () POST /api/v1/user 200 227 - 3.428 ms</code></p> <p>此外，在应用层，我们可以使用 logger 对象来打印 log</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> logger <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/utils'</span>
+
+logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">findOne </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">this</span><span class="token punctuation">.</span>crudModel<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>itemId<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+</code></pre></div><p>如果需要把 logger 文件写入到文件中，直接修改 config 里的配置</p> <div class="language-js extra-class"><pre class="language-js"><code>log<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    level<span class="token punctuation">:</span> <span class="token string">'info'</span><span class="token punctuation">,</span>
+    root<span class="token punctuation">:</span> <span class="token string">'./logs'</span><span class="token punctuation">,</span>
+    allLogsFileName<span class="token punctuation">:</span> <span class="token string">'mongoose'</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>root 就是文件保存的路径。
+allLogsFileName 是文件名。
+日志默认会按日分割。</p> <p>更详细的配置见 logger 的底层实现库 <a href="https://github.com/baryon/tracer" target="_blank" rel="noopener noreferrer">tracer<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, 这个库的优势是可以打印 log 发生的文件位置</p> <p>如果你需要自定义的 logger，直接用新的 config 构造一个 logger 就行。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> logger <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/utils'</span>
+<span class="token keyword">const</span> logger <span class="token operator">=</span> <span class="token function">LoggerFactory</span><span class="token punctuation">(</span>config<span class="token punctuation">)</span>
+</code></pre></div><h3 id="logger-to-mongodb"><a href="#logger-to-mongodb" class="header-anchor">#</a> logger to mongodb</h3> <p>如果没有好用的日志分析服务的话，通过日志排查问题还是比较麻烦的，akajs 提供一个简单方案，把 log 存入 mongodb 中。</p> <ol><li>定义一个 LogModel</li></ol> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>TypeMongoModel<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/mongoose'</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>BaseLog<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/web'</span>
+
+@<span class="token function">TypeMongoModel</span><span class="token punctuation">(</span><span class="token string">'LogModel'</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Log</span> <span class="token keyword">extends</span> <span class="token class-name">BaseLog</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="2"><li>启用 log 记录中间件</li></ol> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">const</span> app<span class="token punctuation">:</span> Application <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  requestLogToDB<span class="token punctuation">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>该中间件默认值记录 post 类的请求，有需求的话，参考这个自己写个中间件即可。</p> <h2 id="健康检查"><a href="#健康检查" class="header-anchor">#</a> 健康检查</h2> <p>通过接口获取/修改服务状态</p> <h3 id="获取服务器状态"><a href="#获取服务器状态" class="header-anchor">#</a> 获取服务器状态</h3> <p>通过请求HTTP状态码判断，200:正常 503:服务状态异常</p> <div class="language- extra-class"><pre class="language-text"><code>GET /healthcheck/check
+</code></pre></div><h3 id="修改服务器状"><a href="#修改服务器状" class="header-anchor">#</a> 修改服务器状</h3> <p>设置状态为异常</p> <div class="language- extra-class"><pre class="language-text"><code>GET /healthcheck/status/reset?status=false
+</code></pre></div><p>设置状态为正常</p> <div class="language- extra-class"><pre class="language-text"><code>GET /healthcheck/status/reset?status=true
+</code></pre></div><h2 id="常用工具"><a href="#常用工具" class="header-anchor">#</a> 常用工具</h2> <p>@akajs/utils 收集了 Kalengo 后端开发常用的工具类，目前有</p> <ul><li>DateUtil ：日期计算，节假日</li> <li>NumberUtil ： 主要处理 0.1 + 0.2 = 0.30000000000000004 问题</li> <li>Logger ： logger 工具，可以显示logger所在代码位置</li> <li>BizError ：自定义错误对象，有 error code</li></ul> <p>使用样例</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span>logger<span class="token punctuation">,</span>DateUtil<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@akajs/utils'</span>
+
+logger<span class="token punctuation">.</span><span class="token function">debug</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">,</span> name<span class="token punctuation">)</span>
+<span class="token comment">// 两天后</span>
+DateUtil<span class="token punctuation">.</span><span class="token function">getDayStart</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="api-接口文档"><a href="#api-接口文档" class="header-anchor">#</a> API 接口文档</h2> <p>akajs 的期望是，可以根据代码自动生成接口文档，但是这里还有些技术 block，typescript 的 ast 读取还是有些麻烦，需要些时间。</p> <p>Kalengo 目前使用 api-doc ，通过注解来定义文档，但是时间长了就会缺少维护。</p> <p>社区为了解决文档方便维护的问题，一般有两个思路，akajs 选择后者。</p> <h3 id="从文档到代码"><a href="#从文档到代码" class="header-anchor">#</a> 从文档到代码</h3> <p>OpenAPI 是 Swagger 参与定义的接口文档格式标准，我们可以先写好接口定义文件，然后使用代码生成工具生成对应的代码。
+而且通过 Swagger 可以快速渲染接口文档，展示给你的合作方。</p> <p>这个方式的缺点是你很难找到好用的代码生成器。</p> <h3 id="从代码到文档"><a href="#从代码到文档" class="header-anchor">#</a> 从代码到文档</h3> <p>这个方式的思路就是通过 compile 代码，分析 AST，生成标准的 OpenAPI file，然后就可以通过 Swagger 渲染出来了。
+Java 的 Web 框架 Spring Boot 就是用这个方式。但是，Node 这边还没人去做这件事，一部分原因是 js 没有类型，不太好识别参数类型，现在有了 typescript，这个问题就比较好解决了。</p> <h2 id="test"><a href="#test" class="header-anchor">#</a> Test</h2> <p>akajs 默认使用 mocha 来运行测试，使用 chai 进行断言。
+在示例项目中，提供了完整的单元测试实现 demo。</p> <h3 id="运行测试"><a href="#运行测试" class="header-anchor">#</a> 运行测试</h3> <div class="language-bash extra-class"><pre class="language-bash"><code>$ <span class="token function">npm</span> i
+$ <span class="token function">npm</span> run <span class="token builtin class-name">test</span>
+</code></pre></div><h3 id="集成测试"><a href="#集成测试" class="header-anchor">#</a> 集成测试</h3> <p>akajs 默认支持集成测试，以接口为单位，当然你要写单元测试也是可以的。
+测试里最麻烦的就是数据 mock，akajs 提供了一个 TestHelper 来帮你做数据准备和清理
+假设我定义一个测试文件为</p> <p><code>user.crud.spec.ts</code></p> <p>只要在相同位置定义一个 fixture 文件</p> <p><code>user.crud.data.ts</code></p> <p>内容长这样：</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">module</span><span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    model<span class="token punctuation">:</span> <span class="token string">'User'</span><span class="token punctuation">,</span>
+    items<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token string">'_id'</span><span class="token punctuation">:</span> <span class="token function">ObjectId</span><span class="token punctuation">(</span><span class="token string">'5b03b80c9b6c6043c138d1b6'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token string">'phone'</span><span class="token punctuation">:</span> <span class="token string">'13870399898'</span><span class="token punctuation">,</span>
+        <span class="token string">'name'</span><span class="token punctuation">:</span> <span class="token string">'HHHHb'</span><span class="token punctuation">,</span>
+        <span class="token string">'balance'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token string">'isRegister'</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><p>这样才测试开始前，akajs 就会往数据库的 User 表写入一条数据，并在下一个测试开始前清理掉。</p> <p>注意：这个测试方式是为了缺少简单好用事务的 mongodb 定制的。如果你使用事务型 db，不需要这么做。</p> <h3 id="测试辅助工具推荐"><a href="#测试辅助工具推荐" class="header-anchor">#</a> 测试辅助工具推荐</h3> <ul><li>sinon ：function mock</li> <li>nock : http mock</li> <li>timekeeper : time mock</li> <li>chai.expect : 断言</li></ul> <h2 id="todo"><a href="#todo" class="header-anchor">#</a> TODO</h2> <p>接下来 akajs 还要集成以下常用工具</p> <ul><li>redis/redlock</li> <li>rabbitmq</li> <li>kafka</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/akajs_doc/quickstart.html" class="prev">快速开始</a></span> <span class="next"><a href="/akajs_doc/changelog.html">Changelog</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/akajs_doc/assets/js/app.0fa76309.js" defer></script><script src="/akajs_doc/assets/js/2.4bdd5d90.js" defer></script><script src="/akajs_doc/assets/js/7.1bc09903.js" defer></script>
+  </body>
+</html>
